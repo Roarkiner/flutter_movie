@@ -126,6 +126,7 @@ Widget _favoriteList(BuildContext context){
           ListView.builder(
             scrollDirection: Axis.vertical,
             shrinkWrap: true,
+            physics: const NeverScrollableScrollPhysics(),
             itemCount: ((user.favorites.length - 1) ~/ 3) + 1,
             itemBuilder: (context, index) => Padding(
               padding: const EdgeInsets.only(bottom: 15),

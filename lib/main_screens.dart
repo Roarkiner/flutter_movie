@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:movie_project/home.dart';
-import 'package:movie_project/profile.dart';
+import 'package:movie_project/profil.dart';
 
 class MainScreens extends StatefulWidget {
   @override
@@ -13,7 +13,7 @@ class _MainScreensState extends State<MainScreens> {
   
   List pageList = [
     {'widget': HomeScreen(), 'title': 'Films'},
-    {'widget': ProfileScreen(), 'title': 'Profil'},
+    {'widget': ProfilScreen(), 'title': 'Profil'},
   ];
 
   @override

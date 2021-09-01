@@ -15,12 +15,12 @@ class User {
 
 User user = User('Scarlett', 'Johansson', 's.johansson@gmail.com', 'Manhattan', 'USA', [movies[0], movies[1], movies[2], movies[5], movies[7]]);
 
-class ProfileScreen extends StatefulWidget {
+class ProfilScreen extends StatefulWidget {
   @override
-  _ProfileScreenState createState() => _ProfileScreenState();
+  _ProfilScreenState createState() => _ProfilScreenState();
 }
 
-class _ProfileScreenState extends State<ProfileScreen> {
+class _ProfilScreenState extends State<ProfilScreen> {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
@@ -28,7 +28,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
         child: Column(
           mainAxisSize: MainAxisSize.max,
           children: [
-            _profileCard(context),
+            _profilCard(context),
             _favoriteList(context)
           ],
         )
@@ -37,7 +37,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
   }
 }
 
-Widget _profileCard(BuildContext context){
+Widget _profilCard(BuildContext context){
   return Material(
     elevation: 10,
     borderRadius: BorderRadius.vertical(bottom: Radius.circular(25)),

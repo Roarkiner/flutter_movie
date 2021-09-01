@@ -54,6 +54,15 @@ class _MovieDetailScreenState extends State<MovieDetailScreen> {
                 Padding(
                   padding: const EdgeInsets.only(bottom: 15),
                   child: Text(
+                    'Année de sortie : ' + movie.yearParution.toString(),
+                    style: TextStyle(
+                      fontSize: 18
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 15),
+                  child: Text(
                     'Genres : ' + movie.genresString(),
                     style: TextStyle(
                       fontSize: 18

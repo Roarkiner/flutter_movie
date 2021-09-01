@@ -23,14 +23,16 @@ class ProfileScreen extends StatefulWidget {
 class _ProfileScreenState extends State<ProfileScreen> {
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Column(
-        mainAxisSize: MainAxisSize.max,
-        children: [
-          _profileCard(context),
-          _favoriteList(context)
-        ],
-      )
+    return SingleChildScrollView(
+      child: SafeArea(
+        child: Column(
+          mainAxisSize: MainAxisSize.max,
+          children: [
+            _profileCard(context),
+            _favoriteList(context)
+          ],
+        )
+      ),
     );
   }
 }

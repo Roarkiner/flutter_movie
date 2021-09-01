@@ -25,10 +25,7 @@ class _MainScreensState extends State<MainScreens> {
         ),
       ),
 
-      body: SingleChildScrollView(
-        child: pageList[pageIndex]['widget'],
-      ),
-
+      body: pageList[pageIndex]['widget'],
 
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: pageIndex,
